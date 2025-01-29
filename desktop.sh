@@ -10,6 +10,11 @@ sudo apt install -y xfce4 xfce4-goodies
 wget https://download.nomachine.com/download/8.16/Linux/nomachine_8.16.1_1_amd64.deb
 sudo dpkg -i nomachine_8.16.1_1_amd64.deb
 
+
+echo "exec startxfce4" > ~/.xsession  
+chmod +x ~/.xsession  
+ls /usr/share/xsessions/
+
 # Install Chromium browser
 sudo apt install -y chromium-browser
 
@@ -46,3 +51,4 @@ EOL'
 rm nomachine_8.16.1_1_amd64.deb
 
 echo "Installation completed successfully!"
+
